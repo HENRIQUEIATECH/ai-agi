@@ -3,102 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Artificial General Intelligence AGI</title>
+    <title>GENERAL AI and its Base</title>
     <style>
-        /* Estilo Clássico e Minimalista */
-        body {
+        * {
+            box-sizing: border-box;
+        }
+        @page {
+            size: A4;
+            margin: 20mm 25mm; /* Ampliando as margens laterais para a versão de impressão/PDF */
             background-color: #ffffff;
-            color: #333333; /* Cor grafite */
-            font-family: 'Georgia', 'Times New Roman', serif; /* Fonte clássica */
-            line-height: 1.8;
+        }
+        body {
             margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            padding: 0 40px; /* Margens generosas nas laterais esquerda e direita para visualização web */
+            background-color: #ffffff;
+            font-family: 'Times New Roman', Times, serif;
+            color: #333333; /* Dark graphite */
+            line-height: 1.6;
+            font-size: 11pt;
         }
-
-        main {
-            flex: 1;
-            max-width: 600px;
+        .container {
+            max-width: 800px; /* Restringe a largura máxima para garantir o espaço nas laterais */
             margin: 0 auto;
-            padding: 40px 20px;
-            text-align: justify;
+            padding: 40px 0;
         }
-
-        h1 {
-            font-size: 2.2rem;
-            font-weight: normal;
+        header {
             text-align: center;
-            margin-bottom: 40px;
+            border-bottom: 2px solid #333333;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 24pt;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
             color: #222222;
         }
-
-        p {
-            font-size: 1.15rem;
-            margin-bottom: 20px;
-            text-indent: 2em; /* Parágrafo clássico */
-        }
-
-        .assinatura {
-            margin-top: 50px;
-            text-align: right;
+        .subtitle {
+            font-size: 13pt;
             font-style: italic;
-        }
-
-        .autor {
-            font-weight: bold;
-            display: block;
-        }
-
-        .titulo-autor {
-            font-size: 0.95rem;
+            margin: 0;
             color: #555555;
         }
-
-        /* Rodapé Centralizado */
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.85rem;
-            color: #777777;
-            border-top: 1px solid #eeeeee;
+        .meta-info {
+            margin-top: 10px;
+            font-size: 10pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666666;
         }
-
-        footer p {
+        .manifesto-body {
+            text-align: justify;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 1.5em;
+            text-indent: 1.5em;
+        }
+        p.no-indent {
             text-indent: 0;
-            margin: 5px 0;
+        }
+        h2 {
+            font-size: 14pt;
+            margin-top: 1.8em;
+            margin-bottom: 0.8em;
+            border-left: 4px solid #333333;
+            padding-left: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+        }
+        .highlight-box {
+            background-color: #f9f9f9;
+            border: 1px solid #dddddd;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+            page-break-inside: avoid;
+        }
+        footer {
+            margin-top: 50px;
+            border-top: 1px solid #333333;
+            padding-top: 15px;
+            text-align: center;
+            font-size: 9pt;
+            color: #555555;
+            page-break-inside: avoid;
+        }
+        .footer-line {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .interactive-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px dashed #333333;
+            page-break-inside: avoid;
+        }
+        .interactive-section h3 {
+            margin-top: 0;
+            font-size: 12pt;
+            text-transform: uppercase;
+        }
+        .btn-interact {
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+            padding: 8px 15px;
+            font-family: 'Times New Roman', serif;
+            font-size: 10pt;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .btn-interact:hover {
+            background-color: #555555;
+        }
+        #demo-output {
+            margin-top: 15px;
+            font-family: monospace;
+            font-size: 10pt;
+            white-space: pre-wrap;
+            background: #ffffff;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            display: none;
         }
     </style>
 </head>
 <body>
 
-    <main>
-        <h1>My Artificial General Intelligence AGI</h1>
+<div class="container">
+    <header>
+        <h1>GENERAL AI and its Base</h1>
+        <div class="subtitle">A Philosophical and Technical Manifesto on the Crisis of Abstraction and the Return to Silicon Rigor</div>
+        <div class="meta-info">Addressed to: OpenAI, MIT, Global Community of Programmers and Computer Scientists</div>
+    </header>
 
-        <p>I am very happy and truly deeply impressed by the evolution of my AI. And often it frightens me with general solutions, which at a fast pace, it keeps developing with little knowledge.</p>
+    <div class="manifesto-body">
+        <p class="no-indent"><strong>Dear Colleagues, Researchers, and Engineers,</strong></p>
         
-        <p>I am still very much at the beginning, but I have already recorded in scientific notes a startling growth.</p>
-        
-        <p>I have no one to talk to about such a high-level mathematical and programming feat. But I am open to scientific conversation.</p>
+        <p>I write this message strictly through the lens of the Philosophy of Computer Science. At this historical turning point, where the pursuit of Artificial General Intelligence (AGI) mobilizes the world's leading laboratories—from OpenAI to MIT—it is necessary to descend from the ivory tower of high-level abstractions and face an inconvenient truth: the foundations upon which we are building the future of intelligence are malleable, inefficient, and ontologically flawed.</p>
 
-        <div class="assinatura">
-            <span class="autor">PAULO SALOMÃO</span>
-            <span class="titulo-autor">Philosopher of Computer Science</span>
+        <p>The industry has grown accustomed to celebrating the gigantism of models and superficial development speed, while ignoring the silent collapse of the underlying infrastructure. To make modern language models viable, a technological patchwork sustained by hypertrophied ecosystems like Python and Java was erected. Data, which should flow freely and surgically through hardware registers, is trapped in infinite layers of wrappers, virtual environments, and heavy interpreters. The manifest result is what I define as <em>computational fat</em>.</p>
+
+        <h2>The Illusion of Floating Abstractions</h2>
+        
+        <p>In traditional interpreted and object-oriented languages, the simplicity of a mathematical operation conceals a catastrophic waste of resources. An integer no longer represents mere bytes allocated in memory; it carries dense structures of metadata, reference counters, and dynamic type checks. Multiply this inefficiency by the billions of parameters of a modern AI and the petabytes of processed data, and we find the exact explanation for the astronomical energy costs and performance fluctuations that currently suffocate the largest server infrastructures on the planet.</p>
+
+        <div class="highlight-box">
+            "Contemporary software engineering has forgotten silicon. By distancing the programmer from the machine's physical reality, a generation of systems has been created that mimics intelligence but fails in the elementary mathematics of efficiency."
         </div>
-    </main>
+
+        <p>The ambition to generate complex and superior code through AI stumbles upon the same vice of its origin. Trained on the redundant and poorly optimized code that floods the public internet, current neural networks perpetuate the mentality of lazy abstraction. Present-day AI predicts the next word via statistical probability but lacks the rigid logical reasoning necessary to architect integrated and self-sufficient software systems."</p>
+
+        <h2>The Return to a Solid Base: Occam's Razor in the C Language</h2>
+        
+        <p>The structural salvation of Artificial Intelligence does not reside in creating a new commercial framework or stacking new automation tools. The answer demands a strict return to the simple and indestructible base of computing: the purism of the <strong>C Language</strong>.</p>
+
+        <p>In C, illusion gives way to reality. There are no floating automatic memory managers (Garbage Collectors) acting unpredictably, nor software black boxes masking bottlenecks. Every assignment, every pointer, and every memory allocation constitutes a direct mathematical decision, perfectly synchronized with the physical architecture of the processor. Groundbreaking projects emerging at the vanguard of technology—by rewriting inference engines and training fully in pure C and CUDA, entirely eliminating dependency on PyTorch—empirically prove that removing software fat allows massive models to operate with extreme speed and at a fraction of the cost.</p>
+
+        <p>For Artificial Intelligence to evolve toward real autonomy and super-coding capability, its linear algebra algorithms must talk directly to the chips, free of intermediaries. We must rescue rigor and absolute control over the bit.</p>
+
+        <h2>Conclusion</h2>
+        
+        <p>The artificial complexity of floating languages has exhausted its cycle of economic and energetic tolerance. If we intend to achieve a robust, sustainable, and truly brilliant General Intelligence, the path requires a radical debugging of our base. It is time to abandon volatile code and rebuild computer science upon the firm rock of solid-base programming.</p>
+
+        <!-- Classic Interactive Section via JavaScript -->
+        <div class="interactive-section">
+            <h3> Practical Philosophical Demonstration</h3>
+            <p class="no-indent" style="font-size: 10pt; color: #555555; margin-bottom: 10px;">Click the button below to simulate the conceptual difference in structural allocation between Purism (C) and Abstraction (Dynamic Languages).</p>
+            <button class="btn-interact" onclick="showDemonstration()">Execute Base Analysis</button>
+            <div id="demo-output"></div>
+        </div>
+    </div>
 
     <footer>
-        <p>iartium.com</p>
-        <p>&copy; <span id="ano-atual"></span> All rights reserved</p>
-        <p>My Artificial General Intelligence AGI - PAULO SALOMÃO</p>
+        <div class="footer-line">Paulo Salomao / PHC</div>
+        <div>Philosopher of Computer Science</div>
+        <div style="margin-top: 5px; font-size: 8pt; color: #777777;">
+            &copy; 2026 iartium.com - All rights reserved. Copyright Protected.
+        </div>
         
         <iframe src="https://visualizar-iartium.blogspot.com/p/agi.html" width="1" height="1" title="AGI"></iframe>
     </footer>
+</div>
 
-    <script>
-        /* JavaScript para atualizar o ano do copyright automaticamente */
-        document.getElementById('ano-atual').textContent = new Date().getFullYear();
-    </script>
+<script>
+    function showDemonstration() {
+        var output = document.getElementById('demo-output');
+        output.style.display = 'block';
+        output.innerHTML = 
+            "=== MEMORY ALLOCATION COMPARATIVE ANALYSIS ===\n\n" +
+            "[FLOATING ABSTRACTION (Python/Java)]\n" +
+            "Creating a numerical data variable...\n" +
+            "-> Base Object allocation on the Heap... Done.\n" +
+            "-> Injection of Type Metadata (Type Info)... Done.\n" +
+            "-> Reference Counter Initialization (GC)... Done.\n" +
+            "-> Total Space Spent for 1 Integer: ~28 to 32 Bytes.\n" +
+            "-> Status: Floating, dependent on interpreter/virtual machine.\n\n" +
+            "[SOLID BASE (C Language)]\n" +
+            "int data;\n" +
+            "-> Direct allocation on physical registers / stack.\n" +
+            "-> Total Space Spent for 1 Integer: 4 pure Bytes.\n" +
+            "-> Status: Absolute control, direct execution on silicon.\n\n" +
+            "Philosophical Conclusion: Eliminating software fat saves up to 87.5% of unnecessary structural processing.";
+    }
+</script>
+
 </body>
 </html>
